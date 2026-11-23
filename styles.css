@@ -1,0 +1,111 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4ff;
+    color: #26334d;
+}
+
+/* Cabecera */
+header {
+    background: linear-gradient(135deg, #172554, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+header p {
+    font-size: 17px;
+    color: #dbeafe;
+}
+
+/* Contenido principal */
+main {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+/* Tarjetas */
+.consejos {
+    display: flex;
+    gap: 25px;
+}
+
+article {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 18px;
+    flex: 1;
+    box-shadow: 0 8px 25px #1e3a8a15;
+    border-bottom: 5px solid #3b82f6;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px #1e3a8a25;
+}
+
+article span {
+    display: inline-block;
+    background: #dbeafe;
+    color: #2563eb;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+article h3 {
+    font-size: 21px;
+    margin: 22px 0 15px;
+    color: #1e3a8a;
+}
+
+article p {
+    line-height: 1.7;
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* Pie de página */
+footer {
+    background: #172554;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 30px;
+    margin-top: 80px;
+    font-size: 14px;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .consejos {
+        flex-direction: column;
+    }
+
+    main {
+        margin: 30px auto;
+    }
+}
